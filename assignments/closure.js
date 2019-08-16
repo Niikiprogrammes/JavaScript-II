@@ -1,5 +1,25 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const whatsUp = () => {
+let N = 0;
+if(debug) console.log('N (inside): '+N );
+return function(name);
+let N = N+1;
+if (debug) console.log('N  (inside'+N);
+let Life = '!'.repeat(N);
+if(debug) console.log(' life:'+life);
+let w = 'whatsUp, ${name} ${ life}';
+if(debug) console.log('w:'+w);
+return w;
+
+
+
+};
+const w = whatsUp();
+console.log(w('nikki'));
+console.log(w('suh'));
+console.log(w('dad'));
+console.log(w('mom'));
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
